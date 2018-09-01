@@ -79,7 +79,7 @@ export default {
       isGameOver: true,
       isGame: false,
       result: '',
-      player: 'o',
+      player: 'x',
       level: 'computerTurn',
     }
   },

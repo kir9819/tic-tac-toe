@@ -32,8 +32,8 @@ class Round {
     this.history = [];
     this.field = [];
     this.size = 3;
-    this.currTurn = O;
-    this.nextTurn = X;
+    this.currTurn = X;
+    this.nextTurn = O;
 
     this.turns = [];
     this.compTurns = [];
@@ -128,7 +128,8 @@ class Round {
     return this.turn(this.turns[getRandom(0,this.turns.length - 1)]);
   }
   computerHardTurn() {
-    if (!this.history.length) return this.turn(this.field[1][1]);
+    // computer turn in center of field
+    // if (!this.history.length) return this.turn(this.field[1][1]);
     if (this.compTurns.length) return this.turn(this.compTurns.pop());
     return this.computerTurn();
   }
